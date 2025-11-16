@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kisah Sukses Pro — Type A</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><h1 id="appName">Kisah Sukses Pro</h1></header>
+<main class="grid">
+  <aside class="left">
+    <div class="card search-card">
+      <input id="googleSearch" placeholder="Cari di Google..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="card yt-card">
+      <h3>YouTube Player</h3>
+      <input id="ytQuery" placeholder="Cari YouTube..." />
+      <div class="yt-controls">
+        <button id="ytSearch">Search</button>
+        <button id="ytRandom">Random</button>
+      </div>
+      <div class="yt-wrap"><iframe id="ytPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe></div>
+      <div class="socials">
+        <button id="btnTik">TikTok</button><button id="btnIg">Instagram</button><button id="btnFb">Facebook</button>
+      </div>
+    </div>
+  </aside>
+
+  <section class="center">
+    <div class="card weather-card" id="weatherCard">
+      <h3>Cuaca</h3>
+      <input id="cityInput" placeholder="Ketik nama kota..." />
+      <button id="cityBtn">Cek Cuaca</button>
+      <div id="weatherResult">Masukkan kota lalu klik Cek Cuaca</div>
+    </div>
+
+    <div class="card ai-card">
+      <h2>Asisten AI</h2>
+      <div id="aiMessages" class="messages"></div>
+      <textarea id="prompt" placeholder="Tanyakan sesuatu..."></textarea>
+      <div class="controls"><select id="modelSelect"><option value="">Auto</option></select><button id="sendAI">Kirim</button></div>
+    </div>
+  </section>
+
+  <aside class="right">
+    <div class="card quote-card">
+      <h3>Quote</h3>
+      <div id="quoteBox">Memuat...</div>
+      <button id="quoteBtn">Random Quote</button>
+    </div>
+
+    <div class="card game-card">
+      <h3>Game: Batu Gunting Kertas</h3>
+      <div id="rpsResult">Pilih: </div>
+      <div class="rps-controls">
+        <button class="rps" data-choice="rock">Batu</button>
+        <button class="rps" data-choice="paper">Kertas</button>
+        <button class="rps" data-choice="scissors">Gunting</button>
+      </div>
+      <div id="rpsScore"></div>
+    </div>
+  </aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
